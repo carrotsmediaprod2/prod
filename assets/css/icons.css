@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "remixicon";
+    src: url('../fonts/remixicon.woff2') format("woff2");
+    font-display: swap;
+}
+
+[class^="ri-"],
+[class*=" ri-"] {
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ri-facebook-circle-fill:before {
+    content: "\ecba";
+}
+
+.ri-film-line:before {
+    content: "\ed21";
+}
+
+.ri-instagram-line:before {
+    content: "\ee66";
+}
+
+.ri-lightbulb-flash-line:before {
+    content: "\eea8";
+}
+
+.ri-movie-2-line:before {
+    content: "\ef7f";
+}
+
+.ri-rocket-line:before {
+    content: "\f096";
+}
+
+.ri-scissors-cut-line:before {
+    content: "\f0c1";
+}
+
+.ri-search-eye-line:before {
+    content: "\f0cf";
+}
+
+.ri-tiktok-fill:before {
+    content: "\f372";
+}
+
+.ri-megaphone-line:before {
+    content: "\f385";
+}

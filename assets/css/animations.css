@@ -1,0 +1,72 @@
+/* Fluid Animations */
+
+@keyframes mesh-drift-1 {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes mesh-drift-2 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(-40px, 40px) rotate(10deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0.3; }
+}
+
+@keyframes grid-fade {
+    0% { opacity: 0.2; }
+    50% { opacity: 0.4; }
+    100% { opacity: 0.2; }
+}
+
+.glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.4;
+    mix-blend-mode: screen;
+}
+
+.orb-1 {
+    top: -20%;
+    left: -10%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, var(--color-primary), transparent 70%);
+    animation: mesh-drift-1 20s ease-in-out infinite;
+}
+
+.orb-2 {
+    bottom: -20%;
+    right: -10%;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, var(--color-accent), transparent 70%);
+    animation: mesh-drift-2 25s ease-in-out infinite reverse;
+}
+
+.orb-3 {
+    top: 40%;
+    left: 40%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #121A2F, transparent 70%); /* Grid Blue/Deep */
+    animation: mesh-drift-1 30s ease-in-out infinite alternate;
+    opacity: 0.6;
+}
+
+/* Particles - subtle vertical rise */
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
